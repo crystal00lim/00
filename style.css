@@ -3,7 +3,7 @@ body, html {
 }
 .col-sm-12 {
   text-align: center;
-  background-color: rgb(35,31,32)
+  background-color: rgb(35,31,32);
 }
 .sidenav {
   height: 100%;
@@ -73,14 +73,16 @@ body, html {
   font-family: 'Times New Roman', Times, serif;
 }
 
+#navbar {
+  padding:0px;
+  margin:10px;
+  background-color:rgb(89,106,99);
+  text-align:left;
+}
 .col-sm-2 {
-  padding: 16px;
   animation-name: side;
   animation-duration:2.0s;
   animation-fill-mode:forwards;
-  text-align:left;
-  background-color:rgb(89,106,99);
-  margin:10px;
 }
 @-webkit-keyframes side {
   0%   { transform: translate(-80px,0px); }
@@ -95,6 +97,38 @@ body, html {
   100% { transform: translate(0px,0px); }
 }
 @keyframes side {
+  0%   { transform: translate(-100px,0px); }
+  100% { transform: translate(0px,0px); }
+}
+
+#blurb {
+  padding:15px;
+  margin:0px;
+  background-color:rgb(155,91,54);
+}
+
+.container {
+  animation-name: scooch;
+  animation-duration:2.0s;
+  animation-fill-mode:forwards;
+  color: white;
+  font-family: Roboto, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  padding: 5px;
+}
+@-webkit-keyframes scooch {
+  0%   { transform: translate(-80px,0px); }
+  100% { transform: translate(0px,0px); }
+}
+@-moz-keyframes scooch {
+  0%   { transform: translate(-80px,0px); }
+  100% { transform: translate(0px,0px); }
+}
+@-o-keyframes scooch {
+  0%   { transform: translate(-100px,0px); }
+  100% { transform: translate(0px,0px); }
+}
+@keyframes scooch {
   0%   { transform: translate(-100px,0px); }
   100% { transform: translate(0px,0px); }
 }
