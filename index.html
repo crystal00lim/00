@@ -2,6 +2,7 @@
 <html>
 <head>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="sm.css">
   <title>parallax</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,17 +22,17 @@
 <div class="row" style="padding:0px;margin:0px;">
   <div class="col-sm-12 pic"></div>
 </div>
-<div style="background-color:rgb(89,106,99);" id="ltor" class="col8">
-  <div data-rellax-speed="4" class="main">
+<div id="ltor" class="col8"></div>
+  <div id="rtol" class="main">
     <span id="navbutton" onclick="openNav()">&#9776; Menu</span>
   </div>
-</div>
-<div id="rtol" class="col9">
-  <div id="ltor" class="main"><p style="font-size:18px;color:white;font-family:'Times New Roman';text-align:right;">A rennovated page for digital artworks made by Crystal Lim</p></div>
-</div>
-<div id="ltor" class="col7">
-  <div data-rellax-speed="-4" class="main3"> <p style="font-size:18px;color:white;font-family:'Times New Roman';">Click <a href="https://github.com/crystal00lim/00" style="color:black;">here</a> for code source.</p></div>
-</div>
+
+<div id="rtol" class="col9"></div>
+  <div id="ltor" class="main2"><p style="font-size:18px;color:white;font-family:'Times New Roman';text-align:right;">A rennovated page for digital artworks made by Crystal Lim</p></div>
+
+<div id="rtol" class="col7"></div>
+  <div id="ltor" class="main3"><p id="w" style="font-size:18px;color:white;font-family:'Times New Roman';">Click <a href="https://github.com/crystal00lim/00" id="l" >here</a> for code source.</p></div>
+
 <svg width="100%" height="300px">
   <rect width="100%" height="300px" fill="url(#grad2)"/>
   <defs>
@@ -47,5 +48,17 @@
     <p style="color:black;font-family:'Times New Roman';"></p>
   </div>
 </div>
+<script>
+  window.onscroll = function() {myFunction()};
+  var rtol = document.getElementById("rtol");
+  var sticky = rtol.offsetTop;
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+    rtol.classList.add("sticky");
+    } else {
+    rtol.classList.remove("sticky");
+    }
+  }
+  </script>
 </body>
 </html>

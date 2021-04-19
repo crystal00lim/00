@@ -22,9 +22,7 @@ body, html {
   transition: 0.5s;
   padding-top: 60px;
 }
-#l {
-  color:black;
-}
+
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -48,12 +46,14 @@ body, html {
 
 .main {
   position:absolute;
-  top:30px;
-  left:13px;
-  width:280px;
-  background-color:transparent;
+  top:15px;
+  left:-8px;
+  text-align: left;
 }
-
+  
+#l {
+  color:rgb(155,91,54);
+}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -63,7 +63,6 @@ body, html {
   cursor: pointer;
   color:white;
   font-family: 'Times New Roman', Times, serif;
-  text-align:left;
 }
 
 #ltor {
@@ -154,7 +153,7 @@ body, html {
 }
 
 .pic {
-  background-image:url('crystal.svg');
+  background-image:url('crystalsm.svg');
   background-repeat:no-repeat;
   background-position:center;
   background-size:900px 600px;
@@ -162,46 +161,29 @@ body, html {
   padding: 0px; 
   margin:0px;
 }
-.main2 {
-  position:absolute;
-  top:190px;
-  right:60px;
-  width:280px;
-  background-color:transparent;
+#w {
+    width: 220px;
+    text-align:right;
 }
 .main3 {
   position:absolute;
-  top:425px;
+  top:570px;
   left:60px;
   width:180px;
   background-color:transparent;
 }
+.main2 {
+    position: absolute;
+    top:650px;
+  }
 .col7 {
-  width:200px;
-  height:100px;
-  padding:10px;
-  position: absolute;
-  top:400px;
-  left:50px;
-  background-color:rgb(89,106,99);
+    display:none;
 }
 .col8 {
-  width:300px;
-  height:100px;
-  padding:10px;
-  position: absolute;
-  top:25px;
-  left:30px;
-  background-color:rgb(89,106,99);
+  display:none;
 }
 .col9 {
-  width:300px;
-  height:115px;
-  padding-top:0px;
-  background-color: rgb(155,91,54);
-  position: absolute;
-  top:170px;
-  right:30px;
+    display:none;
 }
 .col6 {
   width:100%;
@@ -210,6 +192,7 @@ body, html {
   background-color:rgb(89,106,99);
   position: absolute;
   top:900px;
+  z-index:1;
 }
 .pic2 {
   background-image:url('pop.svg');
@@ -219,4 +202,10 @@ body, html {
   height:400px;
   padding: 0px; 
   margin:0px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:2;
 }
