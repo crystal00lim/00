@@ -204,6 +204,8 @@ body, html {
 }
 #o {
   margin-top:310px;
+  height:400px;
+  padding:0;
 }
 .item {
   height:400px;
