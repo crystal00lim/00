@@ -204,13 +204,11 @@ body, html {
 }
 #o {
   margin-top:310px;
-  height:400px;
   padding:0;
 }
-.item {
-  height:400px;
-  padding: 0px; 
+#o2 {
   margin-top:260px;
+  padding:0;
 }
 .sticky {
   position: fixed;
