@@ -204,6 +204,16 @@ body, html {
   background-color:rgb(35,31,32);
   z-index:+7;
 }
+.col85 {
+  width:500px;
+  height:300px;
+  padding:10px;
+  position: absolute;
+  top:800px;
+  left:100px;
+  background-color:rgb(35,31,32);
+  z-index:+7;
+}
 .col9 {
   width:300px;
   height:115px;
