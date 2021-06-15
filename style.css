@@ -169,6 +169,14 @@ body, html {
   height:600px;
   padding: 0px; 
   margin:0px;
+  animation: fadein 3s ease ;
+}
+@keyframes fadein {
+  0% {opacity:0;}
+  10% {opacity:0.1;}
+  30% {opacity:0.5}
+  50% {opacity:0.7;}
+  100% {opacity:1;}
 }
 .main2 {
   position:absolute;
